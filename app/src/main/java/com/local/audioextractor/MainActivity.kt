@@ -29,6 +29,14 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    private val pickAudioToTrimLauncher = registerForActivityResult(
+        ActivityResultContracts.OpenDocument()
+    ) { uri ->
+        if (uri != null) {
+            AudioTrimActivity.launch(this, uri)
+        }
+    }
+
     private val requestNotificationPermissionLauncher = registerForActivityResult(
         ActivityResultContracts.RequestPermission()
     ) { _ ->
@@ -44,6 +52,9 @@ class MainActivity : AppCompatActivity() {
 
         historyAdapter = HistoryAdapter(
             onPlayClick = { item -> openAudio(item) },
+            onTrimClick = { item ->
+                AudioTrimActivity.launch(this, Uri.parse(item.outputUriString), item.outputName)
+            },
             onShareClick = { item -> shareAudio(item) }
         )
 
@@ -54,6 +65,10 @@ class MainActivity : AppCompatActivity() {
 
         binding.btnPickVideos.setOnClickListener {
             pickVideosLauncher.launch(arrayOf("video/*"))
+        }
+
+        binding.btnPickAudioToTrim.setOnClickListener {
+            pickAudioToTrimLauncher.launch(arrayOf("audio/*"))
         }
 
         binding.btnCancel.setOnClickListener {

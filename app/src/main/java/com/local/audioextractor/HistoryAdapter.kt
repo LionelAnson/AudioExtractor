@@ -13,6 +13,7 @@ import java.util.Locale
 
 class HistoryAdapter(
     private val onPlayClick: (HistoryItem) -> Unit,
+    private val onTrimClick: (HistoryItem) -> Unit,
     private val onShareClick: (HistoryItem) -> Unit
 ) : ListAdapter<HistoryItem, HistoryAdapter.ViewHolder>(DIFF_CALLBACK) {
 
@@ -47,6 +48,7 @@ class HistoryAdapter(
             binding.tvMeta.text = "$sizeText · 耗时 $elapsedSec · $timeText"
 
             binding.root.setOnClickListener { onPlayClick(item) }
+            binding.btnTrim.setOnClickListener { onTrimClick(item) }
             binding.btnShare.setOnClickListener { onShareClick(item) }
         }
     }

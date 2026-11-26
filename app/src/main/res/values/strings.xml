@@ -2,7 +2,9 @@
 <resources>
     <string name="app_name">音频提取</string>
     <string name="subtitle_hint">零拷贝极速无损提取 · 保存至 Music/提取音频</string>
-    <string name="pick_videos">选择视频文件（支持多选）</string>
+    <string name="pick_videos">选择视频提取音频（支持多选）</string>
+    <string name="pick_audio_to_trim">剪辑已有音频（截取 / 渐强渐弱）</string>
+    <string name="trim">剪辑</string>
     <string name="cancel">取消</string>
     <string name="recent_history">最近提取</string>
     <string name="clear_history">清空记录</string>

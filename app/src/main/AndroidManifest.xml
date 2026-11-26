@@ -41,6 +41,10 @@
             </intent-filter>
         </activity>
 
+        <activity
+            android:name=".AudioTrimActivity"
+            android:exported="false" />
+
         <service
             android:name=".AudioExtractService"
             android:exported="false"

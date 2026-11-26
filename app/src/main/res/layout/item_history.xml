@@ -43,12 +43,22 @@
         </LinearLayout>
 
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnTrim"
+            style="@style/Widget.Material3.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:minWidth="44dp"
+            android:paddingHorizontal="8dp"
+            android:text="@string/trim" />
+
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/btnShare"
             style="@style/Widget.Material3.Button.TextButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:minWidth="48dp"
+            android:minWidth="44dp"
+            android:paddingHorizontal="8dp"
             android:text="@string/share" />
     </LinearLayout>
 
