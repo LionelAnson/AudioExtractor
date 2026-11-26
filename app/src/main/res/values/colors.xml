@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="brand_primary">#2563EB</color>
+    <color name="status_ok_bg">#1F16A34A</color>
+    <color name="status_ok_text">#15803D</color>
+    <color name="status_error_bg">#1FDC2626</color>
+    <color name="status_error_text">#B91C1C</color>
+</resources>

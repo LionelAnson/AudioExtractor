@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">音频提取</string>
+    <string name="subtitle_hint">零拷贝极速无损提取 · 保存至 Music/提取音频</string>
+    <string name="pick_videos">选择视频文件（支持多选）</string>
+    <string name="cancel">取消</string>
+    <string name="recent_history">最近提取</string>
+    <string name="clear_history">清空记录</string>
+    <string name="share">分享</string>
+    <string name="empty_history_hint">暂无提取记录\n\n在小米相册或文件管理中选中视频\n点「分享」→ 选择「音频提取」即可一键提取</string>
+</resources>
